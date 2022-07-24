@@ -19,7 +19,7 @@ wk.register({
 
 
 wk.register({
-  ["<leader>t"] = {
-    f = { "<cmd>Telescope find_files<cr>", "Find File" },
+  ["<leader>g"] = {
+    g = { "<cmd>lua _lazygit_toggle()<CR>", "Lazygit"}
   },
 })

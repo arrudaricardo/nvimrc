@@ -58,3 +58,4 @@ map("n", "[q" , ":cprev<CR>")
 
 map("n", "<Leader>n", ":nohlsearch<CR>", { silent = true })
 map("n", "<Leader>?", ":WhichKey <CR>")
+map("n", "<Leader>i", ":source $MYVIMRC <CR>")

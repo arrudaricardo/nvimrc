@@ -332,6 +332,16 @@ return require('packer').startup(function()
     end
   }
 
+  -- magit for neovim
+  --
+  use {
+    'TimUntersberger/neogit',
+    requires = 'nvim-lua/plenary.nvim',
+    config = function ()
+     require('neogit').setup({})
+    end
+  }
+
 
   -- reduce the start up time
   use({ 'lewis6991/impatient.nvim' })
