@@ -17,9 +17,14 @@ wk.register({
   },
 })
 
-
 wk.register({
   ["<leader>g"] = {
-    g = { "<cmd>lua _lazygit_toggle()<CR>", "Lazygit"}
+    g = { "<cmd>lua _lazygit_toggle()<CR>", "Lazygit" }
+  },
+})
+
+wk.register({
+  ["<leader>l"] = {
+    f = { "<cmd>lua vim.lsp.buf.formatting_sync()<CR>", "Format Doc" }
   },
 })

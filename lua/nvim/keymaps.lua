@@ -12,7 +12,7 @@ map("i", "<A-k>", "<Esc>:m .-2<CR>==gi")
 -- Move current line / block with Alt-j/k ala vscode.
 
 -- navigation
-map("i", "<A-Up>",  "<C-\\><C-N><C-w>k")
+map("i", "<A-Up>", "<C-\\><C-N><C-w>k")
 map("i", "<A-Down>", "<C-\\><C-N><C-w>j")
 map("i", "<A-Left>", "<C-\\><C-N><C-w>h")
 map("i", "<A-Right>", "<C-\\><C-N><C-w>l")
@@ -37,23 +37,23 @@ map("n", "<C-k>", "<C-w>k")
 map("n", "<C-l>", "<C-w>l")
 
 -- Resize with arrows
-map("n", "<C-Up>" , ":resize -2<CR>")
-map("n", "<C-Down>" , ":resize +2<CR>")
-map("n", "<C-Left>" , ":vertical resize -2<CR")
-map("n", "<C-Right>" , ":vertical resize +2<CR>")
+map("n", "<C-Up>", ":resize -2<CR>")
+map("n", "<C-Down>", ":resize +2<CR>")
+map("n", "<C-Left>", ":vertical resize -2<CR")
+map("n", "<C-Right>", ":vertical resize +2<CR>")
 
 
 -- Tab switch buffer
-map("n", "<S-l>" , ":BufferLineCycleNext<CR>")
-map("n", "<S-h>" , ":BufferLineCyclePrev<CR>")
+map("n", "<S-l>", ":BufferLineCycleNext<CR>")
+map("n", "<S-h>", ":BufferLineCyclePrev<CR>")
 
 -- Move current line / block with Alt-j/k a la vscode.
-map("n", "<A-j>" , ":m .+1<CR>==")
-map("n", "<A-k>" , ":m .-2<CR>==")
+map("n", "<A-j>", ":m .+1<CR>==")
+map("n", "<A-k>", ":m .-2<CR>==")
 
 -- QuickFix
-map("n", "]q" , ":cnext<CR>")
-map("n", "[q" , ":cprev<CR>")
+map("n", "]q", ":cnext<CR>")
+map("n", "[q", ":cprev<CR>")
 -- map("n", "<C-q>" , ":call QuickFixToggle()<CR>")
 
 map("n", "<Leader>n", ":nohlsearch<CR>", { silent = true })

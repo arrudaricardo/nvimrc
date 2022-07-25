@@ -80,6 +80,8 @@ local lsp_defaults = {
   ),
   on_attach = function(client, bufnr)
     vim.api.nvim_exec_autocmds('User', {pattern = 'LspAttached'})
+    -- Add lsp-format
+    require "lsp-format".on_attach(client)
   end
 }
 
@@ -96,3 +98,5 @@ require('lspconfig')['rust_analyzer'].setup{
       ["rust-analyzer"] = {}
     }
 }
+
+require('lspconfig')['sumneko_lua'].setup{}

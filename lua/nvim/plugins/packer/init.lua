@@ -62,7 +62,6 @@ return require('packer').startup(function()
           require("null-ls").builtins.formatting.stylua,
           require("null-ls").builtins.diagnostics.eslint,
           require("null-ls").builtins.completion.spell,
-          require("null-ls").builtins.diagnostics.luacheck,
           require("null-ls").builtins.diagnostics.mypy,
           require("null-ls").builtins.diagnostics.tsc,
         },
@@ -177,7 +176,7 @@ return require('packer').startup(function()
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'},
     config = function ()
-     require("nvim.plugins.barbar") 
+     require("nvim.plugins.barbar")
     end
   }
 
@@ -341,6 +340,13 @@ return require('packer').startup(function()
      require('neogit').setup({})
     end
   }
+
+  -- A wrapper around Neovims native LSP formatting.
+  use {"lukas-reineke/lsp-format.nvim",
+        config = function ()
+          require("lsp-format").setup {}
+        end
+      }
 
 
   -- reduce the start up time
